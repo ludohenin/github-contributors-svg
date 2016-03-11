@@ -1,0 +1,1 @@
+wt create -b -n contributors-list -w --no-parse ./index.js

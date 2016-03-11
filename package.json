@@ -1,0 +1,22 @@
+{
+  "name": "github-contributors-svg",
+  "version": "0.0.1",
+  "description": "generate svg fomratted list of repo contributors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ludovic Henin <ludohenin> (https://3dots.io/blog/)",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.15.0",
+    "cloudconvert": "^1.1.1",
+    "express": "^4.13.4",
+    "github-contributors-list": "^0.1.0",
+    "marked": "^0.3.5",
+    "request": "^2.69.0",
+    "sprintf-js": "^1.0.3",
+    "webtask-tools": "^1.3.0"
+  }
+}
