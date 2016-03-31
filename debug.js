@@ -1,11 +1,22 @@
+var writeFileSync = require('fs').writeFileSync;
 var gen = require('./contributors');
+var config = require('./config');
 
 var params = {
-  user: 'mgechev',
-  repo: 'angular2-seed'
+  params: {
+    user: 'ludohenin',
+    repo: 'gulp-inline-ng2-template'
+  },
+  webtaskContext: {
+    data: {
+      MONGO_URL: config.db.url
+    }
+  }
 };
 
-gen(params)
-  .then(function (svg) {
-    console.log(svg);
+gen(params, function (err, svg) {
+    if (err) console.log(err);
+
+    writeFileSync('debug.html', svg);
+    console.log('done');
   });

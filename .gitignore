@@ -29,6 +29,9 @@ build/Release
 .tsdrc
 .typingsrc
 
+config.json
+debug.html
+start.sh
 
 dist
 dev

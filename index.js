@@ -6,8 +6,7 @@ var server = express();
 
 
 server.get('/:user/:repo.:ext', function (req, res) {
-  getContributors(req.params)
-    .then(function (svg) {
+  getContributors(req, function (err, svg) {
       res.writeHead(200, { 'Content-Type': 'image/svg+xml'});
       res.end(svg);
     });

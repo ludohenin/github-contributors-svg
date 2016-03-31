@@ -1,0 +1,5 @@
+{
+  "db": {
+    "url": "mongodb://<user>:<password>@000000.mlab.com:13300/db_name"
+  }
+}
