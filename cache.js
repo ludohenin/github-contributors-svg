@@ -1,7 +1,7 @@
 var MongoClient = require('mongodb').MongoClient;
 
 var COLLECTION_NAME = 'contributors';
-var EXPIRE = 0; // 24 hours
+var EXPIRE = 86400000; // 24 hours
 
 module.exports = {
   get: getFromMongo,
